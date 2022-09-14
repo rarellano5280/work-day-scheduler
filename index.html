@@ -6,31 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+
+    <!--Header was created using bootstrap-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+
+      <!--class to implement date & time using moment.js-->
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <!--9:00AM-->
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+      <div id = "nine-am" class = "row time-block">
+        <div class = "col-md-1 hour">
+          9:00AM
+        </div>
+        <textarea class ="col-md-10 description">
+        </textarea>
+        <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+      </div>
+
+    <!--10:00AM-->
+    <div id = "ten-am" class = "row time-block">
+        <div class = "col-md-1 hour">
+          10:00AM
+        </div>
+        <textarea class ="col-md-10">
+        </textarea>
+        <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+    <!--11:00AM-->
+    <div id = "eleven-am" class = "row time-block">
+          <div class = "col-md-1 hour">
+            11:00AM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>
+
+    <!--12:00PM-->
+    <div id = "twelve-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            12:00PM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>   
+
+    <!--1:00PM-->
+      <div id = "one-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            1:00PM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>    
+
+    <!--2:00PM-->
+      <div id = "two-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            2:00PM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>
+
+      <!--3:00PM-->    
+      <div id = "three-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            3:00PM
+          </div>
+          <textarea class ="col-md-10">             
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>  
+
+      <!--4:00PM-->
+       <div id = "four-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            4:00PM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>
+
+      <!--5:00PM-->
+      <div id = "five-pm" class = "row time-block">
+          <div class = "col-md-1 hour">
+            5:00PM
+          </div>
+          <textarea class ="col-md-10">
+          </textarea>
+          <button class="btn savebtn col-md-1"><i class="far fa-save"></i></button>
+          </div>    
+
+    </div> <!--ending div-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
