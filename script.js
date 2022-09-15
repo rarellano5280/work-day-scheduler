@@ -2,8 +2,8 @@
 //WHEN I open the planner
 //THEN the current day is displayed at the top of the calendar
 
-
-var today = moment(); //added date and time to header using Moment.js
+//added date and time to header using Moment.js
+var today = moment();
 $("#currentDay").text(today.format('MMMM Do YYYY, h:mm a'));
 
 //WHEN I view the timeblocks for that day
@@ -14,18 +14,17 @@ function colorOfTimeBlock() { //need to create a function that will allow me to 
 var hour = moment().hours(); //need to define a var for the hours within the time-block
 
 $('.time-block').each(function () {
-    console.log(typeof "time-block");
-    let presentHour = parseInt($(this).attr('id')); //Needed to convert time-block string into an integer so that I can compare equality
+console.log(typeof "time-block");
+let presentHour = parseInt($(this).attr('id'));
 
-    if (presentHour > hour) { 
-        $(this).addClass('future');
-    } else if (presentHour === hour) {
-        $(this).addClass('present');
-    } else {
-        $(this).addClass('past');
-        };
-    });
+if (presentHour > hour){
+    $(this).addClass('future');
+} else if (presentHour === hour) {
+    $(this).addClass('present');
+} else {
+    $(this).addClass('past');
+    }
+});
 };
-
 colorOfTimeBlock();
 
