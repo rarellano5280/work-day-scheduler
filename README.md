@@ -36,7 +36,7 @@ This work day scheduler allows the user to view a work day schedule from the hou
 ![](Work-day-scheduler.png)
 
 ## Git Pages Link 
-
+https://rarellano5280.github.io/work-day-scheduler/
 
 ## License
 MIT License
